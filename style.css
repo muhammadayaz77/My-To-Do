@@ -1,0 +1,98 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    /* min-height: 100vh; */
+    background-image: linear-gradient(to left,purple,rgb(89, 0, 255));  
+}
+
+.container{
+    background-color: white;
+    width: 25%;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0px 0px 5px rgb(111, 110, 110);
+    margin-top: 50px;
+    padding-bottom: 20px;
+
+}
+.in-con{
+    border-radius: 15px;
+    width: 90%;
+    max-height: 40px;
+    position: relative;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    overflow: hidden;
+    background-color: #EBEDEE;
+}
+h2{
+    margin-top: 10px;
+}
+#in{
+    background-color: transparent;
+    border: unset;
+    padding: 8px;
+}
+.btn{
+    background-color: #FF643B;
+    border: unset;
+    padding: 8px 22px;
+    position: absolute;
+    right: 0;
+    border-radius: 15px;
+    color: white;
+}
+#in:focus{
+    outline: unset;
+    background-color: transparent;
+}
+ul li{
+    list-style:none;
+    padding: 5px;
+    position: relative;
+}
+.liCon{
+    text-decoration: line-through;
+}
+ul{
+    width: 90%;
+    /* margin-left: 20px; */
+}
+span{
+    position: absolute;
+    right: 0;
+    user-select: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    text-align: center;
+    transition: all ease 0.3s;
+}
+
+span:hover{
+    background-color: rgb(211, 211, 211);
+}
+
+@media screen and (max-width:992px)
+{
+    .container{
+        width: 35%;
+    }
+}
+@media screen and (max-width:700px)
+{
+    .container{
+        width: 55%;
+    }
+}
+@media screen and (max-width:600px)
+{
+    .container{
+        width: 85%;
+    }
+}
